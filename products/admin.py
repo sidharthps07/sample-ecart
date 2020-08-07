@@ -8,7 +8,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class OfferAdmin(admin.ModelAdmin):
-    list_display = ('code', 'discount')
+    list_display = ('code', 'discount','amount')
 
 
 # Register your models here.
