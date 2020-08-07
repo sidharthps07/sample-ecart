@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Products,Offer
+from .models import Products,Offers
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -8,9 +8,9 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class OfferAdmin(admin.ModelAdmin):
-    list_display = ('code', 'discount','amount')
+    list_display = ('code', 'discount')
 
 
 # Register your models here.
 admin.site.register(Products, ProductAdmin)
-admin.site.register(Offer, OfferAdmin)
+admin.site.register(Offers, OfferAdmin)
